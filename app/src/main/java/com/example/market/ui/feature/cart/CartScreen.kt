@@ -224,7 +224,7 @@ fun PurchaseAll(
     val context = LocalContext.current
     val configuration = LocalConfiguration.current
     val fraction =
-        if (configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 0.15f else 0.07f
+        if (configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 0.15f else 0.08f
 
     Surface(
         modifier = Modifier
@@ -276,7 +276,7 @@ fun PurchaseAll(
 
                 Text(
                     text = "total : ${stylePrice(totalPrice)}",
-                    modifier = Modifier.padding(2.dp),
+                    modifier = Modifier.padding(4.dp),
                     style = TextStyle(fontSize = 14.sp, fontWeight = FontWeight.Medium),
                     color = Color.Black
                 )
@@ -528,7 +528,7 @@ fun CartItem(
 
                                 Icon(
                                     imageVector = Icons.Default.Add,
-                                    modifier = Modifier.padding(end = 4.dp, start = 4.dp),
+                                    modifier = Modifier.padding(end = 4.dp, start = 2.dp),
                                     contentDescription = null
                                 )
                             }
